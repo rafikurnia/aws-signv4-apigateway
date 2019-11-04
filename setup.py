@@ -15,7 +15,7 @@ setup(
     python_requires=">=3",
     entry_points={
         "console_scripts": [
-            "aws-signv4-apigateway=aws-signv4-apigateway.main:main"
+            "aws-signv4-apigateway=aws_signv4_apigateway.main:main"
         ],
     }
 )
