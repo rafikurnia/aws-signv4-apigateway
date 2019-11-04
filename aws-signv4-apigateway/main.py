@@ -6,7 +6,7 @@ import requests
 from requests_aws4auth import AWS4Auth
 
 
-if __name__ == "__main__":
+def main():
     if len(sys.argv) < 2:
         error_message = "usage: aws-signv4-apigateway <rest-api-endpoint>\n\naws-signv4-apigateway: error: too few arguments"
         sys.exit(error_message)
@@ -24,3 +24,7 @@ if __name__ == "__main__":
         response = requests.get(endpoint, auth=auth)
 
         print(response.text)
+
+
+if __name__ == "__main__":
+    main()
